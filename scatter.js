@@ -36,7 +36,7 @@ function init() {
 		yaxis: {
 			title: 'Rookie Readiness (RR) Score'
 		},
-		title:'@Slavin22 QB Prospect Scores -- Long Term + Rookie Readiness<br>(2018 class -- dark grey)<br>(2004-2017 classes -- color = NFL career TANY/A*)',
+		title:'@Slavin22 QB Prospect Scores -- Long Term + Rookie Readiness<br><br>(2018 class -- dark grey)<br>(2004-2017 classes -- color = NFL career TANY/A*)<br>(QBs under 250 attempts in NFL = red)',
 		hovermode: 'closest',
 
 	});
