@@ -2,7 +2,7 @@ function init() {
 	var d3 = Plotly.d3;
 
 	var WIDTH_IN_PERCENT_OF_PARENT = 100,
-    	HEIGHT_IN_PERCENT_OF_PARENT = 75;
+    	HEIGHT_IN_PERCENT_OF_PARENT = 70;
 
 	var gd3 = d3.select('body')
 		.select('#plot')
