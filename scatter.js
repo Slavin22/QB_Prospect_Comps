@@ -2,9 +2,10 @@ function init() {
 	var d3 = Plotly.d3;
 
 	var WIDTH_IN_PERCENT_OF_PARENT = 100,
-    	HEIGHT_IN_PERCENT_OF_PARENT = 100;
+    	HEIGHT_IN_PERCENT_OF_PARENT = 75;
 
 	var gd3 = d3.select('body')
+		.select('#plot')
     	.append('div')
     	.style({
         	width: WIDTH_IN_PERCENT_OF_PARENT + '%',
@@ -22,9 +23,10 @@ function init() {
 		mode: 'markers',
 		type: 'scatter',
 		text: qbHover,
-		marker: {size: 20,
+		marker: {size: 18,
 				color: qbData.map(row => row.nfl_tanya),
-				colorscale: [[0, 'rgb(205,0,0)'], [0.25, 'rgb(205,0,0)'], [0.7, 'rgb(255,235,0)'],[0.9, 'rgb(0,128,0)'],[1, 'rgb(0,128,0)']]
+				colorscale: [[0, 'rgb(0,0,0)'], [0.05, 'rgb(128,128,128)'], [0.14, 'rgb(128,128,128)'], [.15, 'rgb(192,0,0)'], [.19, 'rgb(192,0,0)'], [0.5, 'rgb(255,0,0)'], [0.76, 'rgb(255,235,0)'],[0.9, 'rgb(0,128,0)'],[1, 'rgb(0,128,0)']]
+				// colorscale: [[0, 'rgb(192,0,0)'], [.1, 'rgb(0,112,192)'], [1, 'rgb(0,112,192)']]
 				},
 		hoverinfo: 'text',
 		hoverlabel: {bgcolor: 'black', bordercolor: 'white'},
@@ -36,8 +38,9 @@ function init() {
 		yaxis: {
 			title: 'Rookie Readiness (RR) Score'
 		},
-		title:'@Slavin22 QB Prospect Scores -- Long Term + Rookie Readiness<br>(2018 class = dark grey)<br>(2004-2017 classes -- color = NFL career TANY/A*)<br>(QBs under 250 attempts in NFL = red)',
+		title:'@Slavin22 QB Prospect Scores -- Long Term + Rookie Readiness<br>(Hover for QB prospect info)<br>(QBs grouped together can be considered close comps)',
 		hovermode: 'closest',
+		// hoverdistance: -1
 
 	});
 
