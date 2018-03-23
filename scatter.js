@@ -38,7 +38,7 @@ function init() {
 		yaxis: {
 			title: 'Rookie Readiness (RR) Score'
 		},
-		title:'@Slavin22 QB Prospect Scores -- Long Term + Rookie Readiness<br>(Hover for QB prospect info)<br>(QBs grouped together can be considered close comps)',
+		title:'@Slavin22 QB Prospect Scores -- all QBs drafted from 2004-2017, plus 28 QBs from 2018 class<br>(Hover for QB prospect info)<br>(QBs grouped together can be considered close comps)',
 		hovermode: 'closest',
 		// hoverdistance: -1
 
